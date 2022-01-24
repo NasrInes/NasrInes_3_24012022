@@ -191,7 +191,7 @@ p {
 .header-section {
   text-align: center;
   padding: 40px 40px 70px 40px;
-  background-color: #fbf6f6;
+  background-color: #f6F6F6;
 }
 .header-section__text {
   padding-bottom: 40px;
@@ -278,7 +278,7 @@ p {
   display: flex;
   padding: 25px 0px;
   flex-wrap: wrap;
-  background-color: #fbf6f6;
+  background-color: #f6F6F6;
   border-radius: 30px;
   align-items: center;
   justify-content: flex-start;
@@ -333,7 +333,7 @@ p {
 
 /*Section restaurants*/
 .restaurant-section {
-  background-color: #fbf6f6;
+  background-color: #f6F6F6;
 }
 .restaurant-section__container {
   padding: 80px 30px;
@@ -469,7 +469,7 @@ p {
   }
 }
 .main-menus-page {
-  background-color: #fbf6f6;
+  background-color: #f6F6F6;
 }
 @media screen and (min-width: 1200px) {
   .main-menus-page {
@@ -502,7 +502,7 @@ p {
 .menu-section {
   position: relative;
   bottom: 55px;
-  background-color: #fbf6f6;
+  background-color: #f6F6F6;
   padding: 50px 20px 20px 20px;
   border-top-left-radius: 60px;
   border-top-right-radius: 60px;
