@@ -196,6 +196,14 @@ p {
 .header-section__text {
   padding-bottom: 40px;
 }
+@media screen and (max-width: 460px) {
+  .header-section__title {
+    font-size: 30px;
+  }
+  .header-section__p {
+    font-size: 20px;
+  }
+}
 
 /*bouton "Explorer..*/
 .button-header {
@@ -330,6 +338,12 @@ p {
 .step-section__text {
   flex-basis: 60%;
 }
+@media screen and (max-width: 460px) {
+  .step-section__text {
+    font-size: 16px;
+    flex-basis: 60%;
+  }
+}
 
 /*Section restaurants*/
 .restaurant-section {
@@ -378,6 +392,11 @@ p {
     flex-basis: 400px;
   }
 }
+@media screen and (max-width: 460px) {
+  .restaurant-section__article {
+    flex-basis: 250px;
+  }
+}
 
 /*Card des restaurants*/
 .restaurant-card {
@@ -415,6 +434,8 @@ p {
   flex: 1;
   position: relative;
   overflow: hidden;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .restaurant-card__img img {
   position: absolute;
@@ -458,6 +479,14 @@ p {
   background: linear-gradient(180deg, #FF79DA 0%, #b561db 82%, #9356DC 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 460px) {
+  .restaurant-card__text h3 {
+    font-size: 21px;
+  }
+  .restaurant-card__text p {
+    font-size: 18px;
+  }
 }
 
 @keyframes heart-anim {
@@ -737,6 +766,23 @@ p {
   }
   .menu-section__button {
     width: 30%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .menu-section__h1 {
+    font-size: 26px;
+  }
+  .menu-section__heart {
+    font-size: 30px;
+  }
+  .menu-section .card-menu__check-mark {
+    flex-basis: 20%;
+  }
+  .menu-section .card-menu__text h3 {
+    font-size: 20px;
+  }
+  .menu-section .card-menu__text p {
+    font-size: 16px;
   }
 }
 
