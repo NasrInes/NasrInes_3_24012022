@@ -242,13 +242,13 @@
 
 /*Animation FadeId card*/
 .menu-section__container {
-    animation: fadeIn 1200ms backwards;
+    animation: fadeIn 1500ms backwards;
 
 }
 
 @for $i from 1 through  4 {
     .menu-section article:nth-child(#{$i}) {
-        animation-delay: #{$i * 0.2 }s;
+        animation-delay: #{$i * 0.25 }s;
     }
 }
 
