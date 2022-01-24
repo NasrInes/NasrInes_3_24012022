@@ -1,0 +1,66 @@
+@import "../Utils/variables";
+@import "../Utils/mixins";
+
+/*barre de navigation*/
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap ;
+    text-align: center;
+    .logo-container {
+        flex-basis: 100%;
+        padding-top: 25px;
+        z-index: 1;
+        box-shadow: 0px 1px 9px rgb(180, 178, 178);
+        .logo-header {
+            width: 210px;
+            padding-bottom: 15px;
+        }
+    }
+    .localization-nav {
+        flex-basis: 100%;
+        padding: 20px 0px;
+        background-color: rgb(235, 232, 232);
+        &__textarea {
+            margin-left: 10px;
+            width: 150px;
+            border: none;
+            background-color: rgb(235, 232, 232);
+            font-weight: 600;
+            color: rgb(65, 63, 63);
+            &::placeholder {
+                color: rgb(151, 149, 149);
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    &-menus {
+        .logo-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 1px 9px rgb(128, 125, 125);
+        }
+        &__icon {
+            position: absolute;
+            top: 30px;
+            left: 20px;
+        }
+    }
+}
+
+/*Texte d'introduction*/
+.header-section {
+    text-align: center;
+    padding: 40px 40px 70px 40px;
+    background-color: $bg-color;
+    &__text {
+        padding-bottom: 40px;
+    }
+}
+/*bouton "Explorer..*/
+.button-header {
+    @include button-style;
+}

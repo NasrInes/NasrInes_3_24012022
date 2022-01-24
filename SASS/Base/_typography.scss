@@ -1,0 +1,55 @@
+@import "../Utils/variables";
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+.header-section {
+    &__title {
+        font-size: 35px;
+        font-weight: 800;
+    }
+    &__p {
+        color: $font-color-2;
+        font-size: 24px;
+    }
+}
+
+h1 {
+    font-weight: 800;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 800;
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.step-section {
+    font-weight: 700;
+    &__number {
+        color: white;
+        font-weight: 400;
+    }
+    &__text {
+        font-size: 21px;
+    }
+
+}

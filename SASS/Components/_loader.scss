@@ -1,0 +1,94 @@
+@import "../Utils/variables";
+
+/*LOADER*/
+
+.container-loader {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    z-index: 99;
+    animation: loader 3s forwards;
+    background: rgb(255, 255, 255);
+}
+
+@keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        z-index: -5;
+    }
+}
+
+.loader-ellipsis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 45px;
+
+}
+
+.loader-ellipsis div {
+    position: absolute;
+    background: linear-gradient(180deg, $secondary-color 0%, $mix-color 82%, $primary-color 100%);
+    width : 20px;
+    height : 20px;
+    border-radius: 50%;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+
+.loader-ellipsis div:nth-child(1) {
+    left: 0;
+    animation: loader-anim-1 $anim-dur infinite;
+}
+.loader-ellipsis div:nth-child(2) {
+    left: 0;
+    animation: loader-anim-2 $anim-dur infinite;
+}
+.loader-ellipsis div:nth-child(3) {
+    left: 40px;
+    z-index: 1;
+    animation: loader-anim-2 $anim-dur infinite;
+}
+.loader-ellipsis div:nth-child(4) {
+    left: 80px;
+    animation: loader-anim-3 $anim-dur infinite;
+}
+
+@keyframes loader-anim-1 {
+    from {
+    transform: scale(0) ;
+    }
+    to {
+    transform: scale(1) ;
+    }
+}
+
+@keyframes loader-anim-2 {
+    from {
+    transform: translateX(0) ;
+    }
+    to {
+    transform: translateX(40px)  ;
+    }
+}
+
+@keyframes loader-anim-3 {
+    from {
+    transform: scale(1) ;
+    }
+    to {
+    transform: scale(0) ;
+    }
+}

@@ -1,0 +1,85 @@
+@import "../Utils/variables";
+@import "../Utils/mixins";
+
+/*FOOTER*/
+.footer  {
+    background-color: #353535;
+    &__section {
+        padding: $padding-section;
+    }
+    &__logo {
+        width: 150px;
+        filter: invert(99%) sepia(1%) saturate(13%) hue-rotate(202deg) brightness(107%) contrast(100%);
+    }
+    &__list {
+        padding: 0;
+    }
+    &__items {
+        color: white;
+        line-height: 40px;
+        &--bold {
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            text-align: start;
+        }
+    }
+    &__icon {
+        flex-basis: 35px;
+    }
+    &__icon-help {
+        font-size: 14px;
+    }
+
+    &__links {
+        color: white;
+        font-size: 22px;
+    }
+    @media screen and (min-width: 900px) {
+        &__section {
+            max-width: 1400px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 200px;
+        }
+        
+        &__logo {
+            width: 180px;
+            }
+        &__list {
+            flex-basis: 70%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        &__items {
+            flex-basis: 50%;
+
+        }
+    }
+    @media screen and (min-width: 760px) and (max-width: 900px)  {
+        text-align: center;
+        &__section {
+            margin: 0px 40px 0px 40px;
+        }
+        &__items{
+            justify-content: center;
+        }
+    }
+    @media screen and (min-width: 900px) and (max-width:1480px) {
+        &__section {
+            margin: 0px 40px 0px 40px;
+            gap: 90px;
+        }
+        &__items {
+            padding-right: 0px;
+        }
+        &__links {
+            font-size: 19px;
+        }
+    }
+}   

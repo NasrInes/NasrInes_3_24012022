@@ -1,0 +1,55 @@
+@import "../Utils/variables";
+
+@mixin button-style {
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 20px 30px 20px 30px;
+    border-radius: 30px;
+    background: $linear-gradient;
+    font-weight: 500;
+    @include box-shadow;
+    &::before{
+        background: $linear-gradient-hover;
+    }
+    @include bg-hover-anim($border-radius:30px)
+}
+@mixin box-shadow($hover:"yes") {
+    box-shadow: $box-shadow;
+    transition: $transition-g;
+    @if ($hover == "yes") {
+        &--hover:hover {
+        box-shadow: $box-shadow--hover;
+        }
+    }
+    
+}
+
+@mixin before-base {
+    position: relative;
+    z-index: 1;
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        opacity: 0;
+        transition: opacity $transition-g;
+    }
+    &:hover::before {
+        opacity: 1;
+    }
+}
+
+
+@mixin bg-hover-anim($bground-color:white, $border-radius:0px) {
+    @include before-base;
+    &::before {
+        border-radius: $border-radius;
+        background-color: lighten($bground-color, 35%);
+    }
+}
+
