@@ -59,6 +59,14 @@
     &__text {
         padding-bottom: 40px;
     }
+    @media screen and (max-width: 460px) {
+        &__title {
+            font-size: 30px;
+        }
+        &__p {
+            font-size: 20px;
+        }
+    }
 }
 /*bouton "Explorer..*/
 .button-header {

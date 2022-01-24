@@ -47,6 +47,11 @@
             flex-basis: 400px;
         }
     }
+    @media screen and (max-width: 460px) {
+        &__article {
+            flex-basis: 250px;
+        }
+    }
 }
 
 /*Card des restaurants*/
@@ -80,6 +85,8 @@
         flex: 1;
         position: relative;
         overflow: hidden;
+        border-top-left-radius: $border-radius-card;
+        border-top-right-radius: $border-radius-card;
         img {
         position: absolute;
         width: 100%;
@@ -122,6 +129,16 @@
             background: $linear-gradient;
 	        -webkit-background-clip: text;
 	        -webkit-text-fill-color: transparent;
+        }
+    }
+    @media screen and (max-width: 460px) {
+        &__text {
+            h3 {
+                font-size: 21px;
+            } 
+            p {
+                font-size: 18px;
+            }
         }
     }
 }

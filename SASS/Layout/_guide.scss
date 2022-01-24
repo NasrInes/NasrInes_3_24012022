@@ -72,4 +72,10 @@
     &__text {
         flex-basis: 60%;
     }
+    @media screen and (max-width: 460px) {
+        &__text {
+            font-size: 16px;
+            flex-basis:60%
+        }
+    }
 }
