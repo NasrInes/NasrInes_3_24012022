@@ -742,23 +742,23 @@ p {
 
 /*Animation FadeId card*/
 .menu-section__container {
-  animation: fadeIn 1200ms backwards;
+  animation: fadeIn 1500ms backwards;
 }
 
 .menu-section article:nth-child(1) {
-  animation-delay: 0.2s;
+  animation-delay: 0.25s;
 }
 
 .menu-section article:nth-child(2) {
-  animation-delay: 0.4s;
+  animation-delay: 0.5s;
 }
 
 .menu-section article:nth-child(3) {
-  animation-delay: 0.6s;
+  animation-delay: 0.75s;
 }
 
 .menu-section article:nth-child(4) {
-  animation-delay: 0.8s;
+  animation-delay: 1s;
 }
 
 @keyframes fadeIn {
