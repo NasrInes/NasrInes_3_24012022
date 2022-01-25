@@ -48,7 +48,12 @@
         }
     }
     @media screen and (max-width: 460px) {
+        &__container {
+            gap: 0px;
+            height: 1150px;
+            }
         &__article {
+            width:  100%;
             flex-basis: 250px;
         }
     }
