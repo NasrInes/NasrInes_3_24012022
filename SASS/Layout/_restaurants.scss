@@ -68,12 +68,14 @@
     border-radius: $border-radius-card;
     background-color: white;
     overflow: hidden;
+    position: relative;
     @include box-shadow;
     &__new {
         height: 30px;
         width: 100px;
         position: absolute;
         z-index: 2;
+        right: 5px;
         align-self: flex-end;
         background-color: #99e2d0;
         color: darken(#99e2d0, 40%);
