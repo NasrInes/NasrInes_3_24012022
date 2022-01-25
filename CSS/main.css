@@ -412,6 +412,7 @@ p {
   border-radius: 15px;
   background-color: white;
   overflow: hidden;
+  position: relative;
   box-shadow: 5px 10px 12px #cecece;
   transition: ease-in-out 0.3s;
 }
@@ -423,6 +424,7 @@ p {
   width: 100px;
   position: absolute;
   z-index: 2;
+  right: 5px;
   align-self: flex-end;
   background-color: #99e2d0;
   color: #278870;
