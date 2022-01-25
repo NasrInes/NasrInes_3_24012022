@@ -25,6 +25,9 @@
     @media screen and (min-width: 900px) {
         height: 500px;
     }
+    @media screen and (max-width: 460px) {
+        height: 300px;
+    }
 }
 
 /*Menus des restaurants*/
