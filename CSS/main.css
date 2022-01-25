@@ -393,7 +393,12 @@ p {
   }
 }
 @media screen and (max-width: 460px) {
+  .restaurant-section__container {
+    gap: 0px;
+    height: 1150px;
+  }
   .restaurant-section__article {
+    width: 100%;
     flex-basis: 250px;
   }
 }
