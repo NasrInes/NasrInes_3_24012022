@@ -608,12 +608,14 @@ p {
   border-radius: 18px;
   box-shadow: 5px 10px 12px #cecece;
   overflow: hidden;
+  position: relative;
 }
 .menu-section__container .card-menu__text {
   line-height: 30px;
   height: 50px;
-  flex-basis: 70%;
+  width: 95%;
   padding: 15px;
+  transition: width 0.6s;
 }
 .menu-section__container .card-menu__text h3 {
   font-size: 22px;
@@ -633,52 +635,43 @@ p {
 }
 .menu-section__container .card-menu__price {
   font-weight: 800;
-  text-align: center;
   align-self: flex-end;
-  flex-basis: 30px;
+  flex: 1;
+  text-align: end;
   font-size: 18px;
   height: auto;
-  padding: 0px 25px 15px 0px;
-  transform: translateX(100%);
-  transition: transform ease-out 0.5s;
+  padding: 0px 25px 15px 8px;
+  transition: transform ease-out 0.7s;
 }
 .menu-section__container .card-menu__check-mark {
   display: flex;
-  transform: translateX(100%);
   align-items: center;
   justify-content: center;
-  flex-basis: 15%;
+  position: absolute;
+  right: -150px;
+  width: 70px;
+  height: 100%;
   background-color: #99E2D0;
   color: white;
-  font-size: 24px;
-  transition: transform ease-out 0.5s;
+  font-size: 26px;
+  transition: transform ease-out 0.7s;
   transform-origin: right;
 }
 .menu-section__container .card-menu__check-mark-icon {
   display: inline-block;
-  transition: transform ease-out 0.5s;
+  transition: transform ease-out 0.7s;
 }
 .menu-section__container .card-menu--hover:hover .card-menu__check-mark {
-  display: flex;
-  transform: translateX(0);
+  transform: translateX(-150px);
 }
 .menu-section__container .card-menu--hover:hover .card-menu__check-mark-icon {
   transform: rotate(360deg);
 }
 .menu-section__container .card-menu--hover:hover .card-menu__price {
-  transform: translateX(0);
+  transform: translateX(-60px);
 }
-.menu-section__container .card-menu--hover:hover .card-menu__text h3 {
-  -webkit-line-clamp: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-box-orient: vertical;
-}
-.menu-section__container .card-menu--hover:hover .card-menu__text p {
-  -webkit-line-clamp: 1;
-  text-overflow: ellipsis;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+.menu-section__container .card-menu--hover:hover .card-menu__text {
+  width: 60%;
 }
 .menu-section__button {
   align-self: center;
@@ -757,6 +750,9 @@ p {
     flex-basis: 100%;
     height: 90px;
   }
+  .menu-section .card-menu__text h3 {
+    font-size: 20px;
+  }
   .menu-section .card-menu__check-mark {
     flex-basis: 20%;
   }
@@ -778,6 +774,9 @@ p {
   }
   .menu-section__button {
     width: 30%;
+  }
+  .menu-section .card-menu__text h3 {
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 460px) {
