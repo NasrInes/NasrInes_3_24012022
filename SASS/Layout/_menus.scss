@@ -99,11 +99,13 @@
             border-radius: 18px;
             box-shadow: $box-shadow;
             overflow: hidden;
+            position: relative;
             &__text {
                 line-height: 30px;
                 height: 50px;
-                flex-basis: 70%;
+                width: 95%;
                 padding: 15px;
+                transition: width 0.6s;
                 h3 {
                     font-size: 22px;
                     display: -webkit-box;
@@ -123,24 +125,25 @@
             }
             &__price {
                 font-weight: 800;
-                text-align: center;
                 align-self: flex-end;
-                flex-basis: 30px;
+                flex: 1;
+                text-align: end;
                 font-size: 18px;
                 height: auto;
-                padding: 0px 25px 15px 0px;
-                transform: translateX(100%);
+                padding: 0px 25px 15px 8px;
                 transition: transform $menu-transition;
             }
             &__check-mark {
                 display: flex;
-                transform: translateX(100%);
                 align-items: center;
                 justify-content: center;
-                flex-basis: 15%;
+                position: absolute;
+                right: -150px;
+                width: 70px;
+                height: 100%;
                 background-color: $tertiary-color;
                 color: white;
-                font-size: 24px;
+                font-size: 26px;
                 transition: transform $menu-transition;
                 transform-origin: right;
                 &-icon {
@@ -151,30 +154,18 @@
             &--hover:hover {
                 .card-menu {
                     &__check-mark {
-                        display: flex;
-                        transform: translateX(0);
+                        transform: translateX(-150px);
                         &-icon {
                             transform: rotate(360deg);
                         }
                     }
                     &__price {
-                    transform: translateX(0);
+                    transform: translateX(-60px);
                     }
                     &__text {
-                        h3 {
-                            -webkit-line-clamp: 1;
-                            overflow: hidden;
-                            text-overflow: ellipsis;
-                            -webkit-box-orient: vertical;
-                            }
-                        p {
-                            -webkit-line-clamp: 1;
-                            text-overflow: ellipsis;
-                            -webkit-box-orient: vertical;
-                            overflow: hidden;
-                        }
+                        width: 60%;
                     }
-                }
+                }   
             }
             
         }
@@ -219,6 +210,9 @@
         .card-menu {
             flex-basis: 100%;
             height: 90px;
+            &__text h3 {
+                font-size: 20px;
+            }
             &__check-mark {
                 flex-basis: 20%;
             }
@@ -239,6 +233,11 @@
         }
         &__button {
             width: 30%;
+        }
+        .card-menu {
+            &__text h3 {
+                font-size: 18px;
+            }
         }
     }
     @media screen and (max-width: 460px) {
