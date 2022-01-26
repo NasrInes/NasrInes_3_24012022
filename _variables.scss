@@ -1,0 +1,32 @@
+$bg-color : #f6F6F6;
+$bg-color-localization: #eaeaea;
+
+$primary-color: #9356DC;
+$mix-color:rgba(181,97,219,1);
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+
+$color-shadow:rgb(206, 206, 206);
+$color-shadow--hover: darken($color-shadow, 5%);
+$box-shadow: 5px 10px 12px $color-shadow;
+$box-shadow--hover: 5px 15px 20px $color-shadow--hover;
+
+
+$linear-gradient : linear-gradient(180deg, $secondary-color 0%, $mix-color 82%, $primary-color 100%);
+$linear-gradient-hover:linear-gradient(180deg,
+    lighten($secondary-color, 3%) 0%,
+    lighten($mix-color, 3%) 82%,
+    lighten($primary-color, 3%) 100%
+);
+
+$font-color-2: rgb(122, 121, 121);
+
+$padding-section: 30px;
+
+$transition-g: ease-in-out 0.3s;
+$menu-transition: ease-out 0.7s;
+
+$border-radius-card: 15px;
+
+$anim-dur: 0.8s;
+$heart-anim-dur: 1.5s;
